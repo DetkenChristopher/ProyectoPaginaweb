@@ -66,7 +66,7 @@ const eliminar = (id) =>{
 
 async function putJson(data) {
     try {
-        const response = await fetch("http://localhost:3000/productos/${data.id}", {
+        const response = await fetch(`http://localhost:3000/productos/${data.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -98,7 +98,7 @@ async function postJson(data){
 
 async function deleteJson(data){
     try {
-        const response = await fetch("http://localhost:3000/productos/${data}", {
+        const response = await fetch(`http://localhost:3000/productos/${data}`, {
             method: "DELETE",
 
         });
